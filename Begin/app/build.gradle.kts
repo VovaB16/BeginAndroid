@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.beginandroid"
+    namespace = "com.example.simba"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.beginandroid"
+        applicationId = "com.example.simba"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -37,12 +37,15 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
+    implementation(libs.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
+    implementation(libs.activity)
+    implementation(libs.constraintlayout)
+    implementation(libs.core.ktx)
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
 }
