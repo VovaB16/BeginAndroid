@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">BeginAndroid</string>
     <string name="Category">Категорії</string>
+    <string name="main_activity">Головна</string>
+    <string name="category_activity">Категорії</string>
+    <string name="category_create_activity">Додати</string>
 </resources>
